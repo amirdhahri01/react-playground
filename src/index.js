@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <h1>Hello World</h1>
+   <ul>
+    <li>Js</li>
+    <li>Css</li>
+    <li>html</li>
+    <li>jquery</li>
+    <li>bootstrap</li>
+   </ul>
 );
 
