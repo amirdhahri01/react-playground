@@ -20,5 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const reactElement  = <h1>Hello There</h1>
 console.log(MyAwesomeNavBar());
 
-root.render(MyAwesomeNavBar());
+root.render(<>
+    <MyAwesomeNavBar/>
+</>);
 
