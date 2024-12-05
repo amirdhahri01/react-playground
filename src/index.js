@@ -26,16 +26,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // h1.className = "header"
 // document.getElementById("root").appendChild(h1)
 
-root.render(<>
+root.render(<div className='app'>
     {/* <MyAwesomeNavBar/> */}
-    <img src={ReacLogo} alt=""  />
+    <img src={ReacLogo} alt="" />
     <h1>Fun Facts About React!</h1>
     <ul>
         <li>Was first release in 2013</li>
         <li>Was originally created by Jordn Walke</li>
         <li>Has well over 200k stars on github</li>
         <li>Is maintained by Meta</li>
-        <li>Power thousands of entreprise apps, includin mobile apps</li> 
+        <li>Power thousands of entreprise apps, includin mobile apps</li>
     </ul>
-</>);
+</div>);
 

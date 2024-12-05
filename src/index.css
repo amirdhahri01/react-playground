@@ -20,3 +20,33 @@
 .nav-list li:hover{
    color: lightsalmon;
 }
+.app{
+    text-align: center;
+    width: 500px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.app ul{
+    list-style: none;
+}
+.app ul li:first-of-type{
+    padding: 0 0;
+    padding-bottom: 2px;
+}
+.app ul li{
+    padding: 2px 0;
+    font-weight: 500;
+}
+.app img{
+    animation: rotate 5s infinite linear;
+    margin: 20px 0px;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
