@@ -1,7 +1,9 @@
 import ReactDOM from 'react-dom/client';
-import ReacLogo from "./imgs/react-logo.png"
 // import { createElemet, Fragment } from 'react';
 import "./index.css"
+import Header from './Header';
+import MainContent from './MainContent';
+import Footer from './Footer';
 // const MyAwesomeNavBar = () => {
 //   return (
 //      <div className="nav">
@@ -41,41 +43,9 @@ root.render(<div className='app'>
 
 </div>);
 
-function Header() {
-    return (
-        <header>
-            <img src={ReacLogo} alt="" />
-            <nav>
-                <ul className='nav-list'>
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    )
-}
-function MainContent() {
-    return (
-        <main>
-            <h1>Fun Facts About React!</h1>
-            <ul>
-                <li>Was first release in 2013</li>
-                <li>Was originally created by Jordn Walke</li>
-                <li>Has well over 200k stars on github</li>
-                <li>Is maintained by Meta</li>
-                <li>Power thousands of entreprise apps, includin mobile apps</li>
-            </ul>
-        </main>
-    )
-}
-function Footer() {
-    return (
-        <footer>
-            All Rights Reserved 2024&copy;
-        </footer>
-    )
-}
+
+
+
 function Page() {
     return (
         <>
