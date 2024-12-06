@@ -27,8 +27,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // document.getElementById("root").appendChild(h1)
 
 root.render(<div className='app'>
-    {/* <MyAwesomeNavBar/> */}
-    <img src={ReacLogo} alt="" />
+    {/* <MyAwesomeNavBar/> 
+     <img src={ReacLogo} alt="" />
     <h1>Fun Facts About React!</h1>
     <ul>
         <li>Was first release in 2013</li>
@@ -36,6 +36,23 @@ root.render(<div className='app'>
         <li>Has well over 200k stars on github</li>
         <li>Is maintained by Meta</li>
         <li>Power thousands of entreprise apps, includin mobile apps</li>
-    </ul>
+    </ul> */}
+    <Main />
+
 </div>);
 
+function Main() {
+    return (
+        <>  
+            <img src={ReacLogo} alt="" />
+            <h1>Fun Facts About React!</h1>
+            <ul>
+                <li>Was first release in 2013</li>
+                <li>Was originally created by Jordn Walke</li>
+                <li>Has well over 200k stars on github</li>
+                <li>Is maintained by Meta</li>
+                <li>Power thousands of entreprise apps, includin mobile apps</li>
+            </ul>
+        </>
+    )
+}
