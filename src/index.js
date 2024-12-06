@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import ReacLogo from "./imgs/react-logo.png"
-import { createElement } from 'react';
+// import { createElemet, Fragment } from 'react';
 import "./index.css"
 // const MyAwesomeNavBar = () => {
 //   return (
@@ -37,14 +37,27 @@ root.render(<div className='app'>
         <li>Is maintained by Meta</li>
         <li>Power thousands of entreprise apps, includin mobile apps</li>
     </ul> */}
-    <Main />
+    <Page />
 
 </div>);
 
-function Main() {
+function Header() {
     return (
-        <>  
+        <header>
             <img src={ReacLogo} alt="" />
+            <nav>
+                <ul className='nav-list'>
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+function MainContent() {
+    return (
+        <main>
             <h1>Fun Facts About React!</h1>
             <ul>
                 <li>Was first release in 2013</li>
@@ -53,6 +66,22 @@ function Main() {
                 <li>Is maintained by Meta</li>
                 <li>Power thousands of entreprise apps, includin mobile apps</li>
             </ul>
+        </main>
+    )
+}
+function Footer() {
+    return (
+        <footer>
+            All Rights Reserved 2024&copy;
+        </footer>
+    )
+}
+function Page() {
+    return (
+        <>
+            <Header />
+            <MainContent />
+            <Footer />
         </>
     )
 }
